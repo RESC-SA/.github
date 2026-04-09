@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://resc.sa/favicon.ico" width="90" alt="RESC" />
+<!-- <img src="https://resc.sa/favicon.ico" width="90" alt="RESC" /> -->
 
 # RESC
 
