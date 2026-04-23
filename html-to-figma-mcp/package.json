@@ -1,0 +1,44 @@
+{
+  "name": "html-to-figma-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that converts HTML/CSS into Figma-compatible JSON node trees.",
+  "type": "module",
+  "bin": {
+    "html-to-figma-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "node-html-parser": "^6.1.13",
+    "postcss": "^8.4.47",
+    "postcss-safe-parser": "^7.0.0",
+    "undici": "^6.19.8",
+    "zod": "^3.23.8"
+  },
+  "optionalDependencies": {
+    "puppeteer-core": "^23.5.0",
+    "@puppeteer/browsers": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.1.1"
+  }
+}
